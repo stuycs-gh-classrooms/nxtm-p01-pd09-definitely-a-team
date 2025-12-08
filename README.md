@@ -26,45 +26,57 @@ The first phase will be to work on this document.
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-
+Controllable paddle
+Bouncing Ball
+Breakable Blocks
+Out of Bounds limit at the bottom
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-
+Pause/play/reset button
+Multiple lives
+Continuation if screen is cleared
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- 
+- Display # lives left in corner of screen
 
 2D Array:
-- 
+- Blocks
 
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- 
+- start: s
+- pause: p
+- reset: r
 
 Mouse Control:
-- Mouse movement: 
-- Mouse pressed: 
+- Mouse movement: Paddle follows (x only)
+- Mouse pressed: ?
 
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+Bricks
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - Grid of # bricks containing values determining if bricks are broken or alive
+  - 
 - METHODS
-  - LIST METHODS HERE
+  - Draw all bricks
+  - If alive, draw, if broken, remove
 
-CLASS NAME1
+Ball
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - Size
+  - Speed
 - METHODS
-  - LIST METHODS HERE
+  - Create ball
+  - Set speed
+  - Add proper movement
