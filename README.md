@@ -67,16 +67,29 @@ What classes will you be creating for this project? Include the instance variabl
 Bricks
 - Instance variables:
   - Grid of # bricks containing values determining if bricks are broken or alive
-  - 
+  - int xsize
+  - int ysize
 - METHODS
   - Draw all bricks
   - If alive, draw, if broken, remove
 
 Ball
 - Instance variables:
-  - Size
-  - Speed
+  - int size
+  - int xspeed
+  - int yspeed
+  - int x
+  - int y
 - METHODS
   - Create ball
   - Set speed
-  - Add proper movement
+  - Add proper movement (bouncing)
+
+Paddle
+- Instance Variables
+  - int xsize
+  - int ysize
+  - int x //Corresponding to mousex
+  - int y
+- METHODS
+  - Draw paddle
