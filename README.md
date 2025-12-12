@@ -1,6 +1,6 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/QTULg0OX)
 # NeXtCS Project 01
-### thinker0: FRIST LSAT
-### thinker1: FRIST LSAT
+### thinker0: Benjamin Rosenstein
 ---
 
 ### Overview
@@ -21,50 +21,75 @@ The first phase will be to work on this document.
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: Breakout
 
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-YOUR ANSWERS HERE
+- Controllable paddle
+- Bouncing Ball
+- Breakable Blocks
+- Out of Bounds limit at the bottom
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+- Pause/play/reset button
+- Multiple lives
+- Continuation if screen is cleared
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- Display # lives left in corner of screen
 
 2D Array:
-- YOUR ANSWER HERE
+- Blocks
 
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- start: s
+- pause: p
+- reset: r
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: Paddle follows (x only)
+- Mouse pressed: ?
 
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+Bricks
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - Grid of # bricks containing values determining if bricks are broken or alive
+  - int xsize
+  - int ysize
 - METHODS
-  - LIST METHODS HERE
+  - Draw all bricks
+  - If alive, draw, if broken, remove
 
-CLASS NAME1
+Ball
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - int size
+  - int xspeed
+  - int yspeed
+  - int x
+  - int y
 - METHODS
-  - LIST METHODS HERE
+  - Create ball
+  - Set speed
+  - Add proper movement (bouncing)
+
+Paddle
+- Instance Variables
+  - int xsize
+  - int ysize
+  - int x //Corresponding to mousex
+  - int y
+- METHODS
+  - Draw paddle
