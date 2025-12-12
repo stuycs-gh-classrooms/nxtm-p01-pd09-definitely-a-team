@@ -1,3 +1,19 @@
+
+void setup() {
+  background(0);
+  size(800, 800);
+}
+
+void draw() {
+  Ball b = new Ball();
+  Paddle p = new Paddle();
+  Brick B = new Brick();
+ // B.display();
+  p.display();
+  b.display();
+  b.move();
+}
+
 class Ball {
 
   int Bx;
@@ -61,19 +77,19 @@ class Brick {
   int bysize;
 
   Brick() {
-    int bxsize = 40;
+    int bxsize = 80;
     int bysize = 20;
-    b = new int[20][10];
+    b = new int[10][4];
     for (int x = 0; x < width / bxsize; x++) {
-      for (int y = 0; y < 10; y++) {
+      for (int y = 0; y < 4; y++) {
         b[x][y] = 1;
       }
     }
   }
 
   void display() {
-    for (int x = 0; int x < width / bxsize) {
-      for (int y = 0; int y < height / 2 / bysize) {
+    for (int x = 0; x < (width / bxsize); ) {
+      for (int y = 0; y < (height / 8 / bysize); ) {
         if (x < 20) {
           rect(x * bxsize, y * bysize, bxsize, bysize);
           x++;
@@ -82,20 +98,6 @@ class Brick {
           y++;
         }
       }
-      }
     }
   }
-
-
-  void setup() {
-    background(0);
-    size(800, 800);
-  }
-
-  void draw() {
-    Ball b = new Ball();
-    Paddle p = new Paddle();
-    p.display();
-    b.display();
-    b.move();
-  }
+}
